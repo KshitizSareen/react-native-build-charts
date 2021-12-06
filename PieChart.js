@@ -5,7 +5,12 @@ import {View, StyleSheet, Text, FlatList} from 'react-native';
 
 export const PieChart = (props) => {
 
-    const [data,setData]= useState(props.data);
+    const [data,setData]= useState([{
+      percent: 0,
+      color: "",
+      x: 0,
+      v: 0
+    }]);
     const [size, setSize] = useState(0);
     const [index,setIndex]= useState(0);
 
@@ -110,7 +115,7 @@ export const PieChart = (props) => {
             <Text style={{
                 alignSelf: 'center',
                 width: 0.3*size
-            }}>{"percent: "+data[index].percent.toFixed(2)*100+"%"}</Text>
+            }}>{"percent: "+ data[index].percent ?  data[index].percent.toFixed(2)*100+"%" : ""}</Text>
             </View>
         <Svg
           height={size}

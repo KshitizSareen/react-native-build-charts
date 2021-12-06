@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React,{ useEffect, useState} from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
 
@@ -18,7 +18,6 @@ export  const BarChart = (props)=>{
         setWidth(props.width);
         setHeight(props.height);
         setData(props.data);
-        let verticalLength=0;
         let verticalPoints=[];
         let maxValue = 0;
         let outputs= 0;
@@ -36,7 +35,6 @@ export  const BarChart = (props)=>{
         {
             range=props.range;
         }
-        setDataVerticalLength(verticalLength);
         setDataHorizontalLength(props.data.length);
         for(let i=0;i<=maxValue;i+=range)
         {

@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import { Text, View } from 'react-native';
+import {  Text,  View } from 'react-native';
 import Svg, { Circle, Line } from 'react-native-svg';
 
 
@@ -25,7 +25,6 @@ export  const LineChart = (props)=>{
             outputs+=1;
             maxValue=Math.max(maxValue,props.data[i].y);
         }
-        setOutput(outputs);
         let range = 5;
         if(props.range!=undefined)
         {
