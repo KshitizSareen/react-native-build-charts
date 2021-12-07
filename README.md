@@ -73,7 +73,7 @@ import {BarChart} from 'react-native-build-charts';
 | data | { x: any, y : Number[] }   | The data of the chart |
 
 
-![Alt Text](BarChart.jpg)
+![Alt Text](BarChart.png)
 
 
 ## Creating a Pie chart
@@ -102,7 +102,7 @@ import { PieChart } from 'react-native-build-charts';
 |   size     | number      |  The size of the chart             |
 | data | { x: any, y : Number }   | The data of the chart |
 
-![Alt Text](PieChart.jpg)
+![Alt Text](PieChart.png)
 
 ## Creating a Line chart
 
@@ -143,4 +143,4 @@ import { LineChart } from 'react-native-build-charts';
 | data | { x: any, y : number }   | The data of the chart |
 | color | string| The color of the line |
 
-![Alt Text](LineChart.jpg)
+![Alt Text](LineChart.png)
