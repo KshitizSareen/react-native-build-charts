@@ -3,6 +3,10 @@
 
 ## Getting started
 
+Before using react-native-build-charts, you need to install react-native-svg
+
+`$ npm install react-native-svg --save`
+
 `$ npm install react-native-build-charts --save`
 
 ### Mostly automatic installation
