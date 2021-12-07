@@ -97,10 +97,13 @@ export const PieChart = (props) => {
 
     return (
       <View
-        style={[
-          StyleSheet.absoluteFill,
-          {alignItems: 'center', justifyContent: 'center',flexDirection:'row'},
-        ]}>
+        style={
+          {width: size,
+          height: size,
+        alignItems: 'center',
+      justifyContent: 'center',
+    flexDirection: 'row'}
+          }>
           <View style={{
             marginRight: '1%'
           }}>
