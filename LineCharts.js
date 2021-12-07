@@ -87,7 +87,7 @@ export  const LineChart = (props)=>{
                         if(index<data.length-1)
                         {
                         return(
-                            <Svg>
+                            <Svg key={index}>
                             <Circle cx={((index)*0.8*width/dataHorizontalLength)+((0.8*width/dataHorizontalLength)/2)} cy={0.8*height-(dataPoint.y*( 0.8*height/maxValue))} r="2" fill="black"/>
                             <Line x1={((index)*0.8*width/dataHorizontalLength)+((0.8*width/dataHorizontalLength)/2)} y1={0.8*height-(dataPoint.y*( 0.8*height/maxValue))} x2={((index+1)*0.8*width/dataHorizontalLength)+((0.8*width/dataHorizontalLength)/2)} y2={0.8*height-(data[index+1].y*( 0.8*height/maxValue))} stroke={color} strokeWidth="1"/> 
                             </Svg>
@@ -96,7 +96,7 @@ export  const LineChart = (props)=>{
                         else
                         {
                             return(
-                                <Svg>
+                                <Svg key={index}>
                                     <Circle cx={((index)*0.8*width/dataHorizontalLength)+((0.8*width/dataHorizontalLength)/2)} cy={0.8*height-(dataPoint.y*( 0.8*height/maxValue))} r="2" fill="black"/>
                                     </Svg>
                             )
